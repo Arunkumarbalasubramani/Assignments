@@ -1,0 +1,21 @@
+
+const student = [
+  { Name: "Arun", Gender: "Male" },
+  { Name: "Ahmad", Gender: "Male" },
+  { Name: "Ruthika Kadam", Gender: "Female" },
+  { Name: "Priyadharshini", Gender: "Female" }
+];
+
+// const femaleStu = student.filter((item) => item.Gender === "Female");
+// const maleStu = student.filter((item) => item.Gender === "Male");
+// const startWithA = student.filter((item) => item.Name[0] === "A");
+
+console.log(
+  student.filter((item) => item.Gender === "Female").map((value) => value.Name)
+);
+console.log(
+  student.filter((item) => item.Name[0] === "A").map((value) => value.Name)
+);
+console.log(
+  Object.keys(student.filter((item) => item.Gender === "Male")).length
+);
